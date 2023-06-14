@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        display: grid;
+        /* display: flex; */
+        justify-content: center;
+
+        height: 1500px;
+        background-color: bisque;
+      }
+      .child {
+        width: 800px;
+        height: 1500px;
+        background-color: chocolate;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        border-color: black;
+        border-style: solid;
+        margin-bottom: 100px;
+      }
+      .logo {
+        width: 60px;
+        border-color: black;
+        border-style: solid;
+      }
+      .nav {
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        /* gap: 40px; */
+        border-color: black;
+        border-style: solid;
+      }
+      .desc {
+        border-color: black;
+        border-style: solid;
+      }
+      .desc-first,
+      .desc-second {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 50px;
+      }
+      .desc-second {
+        margin-bottom: 50px;
+      }
+      .desc-third {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="child">
+        <div class="header">
+          <div class="logo">로고</div>
+          <div class="nav">
+            <div>홈으로</div>
+            <div>소개</div>
+            <div>자주묻는질문</div>
+          </div>
+        </div>
+        <div class="desc">
+          <div class="desc-first">금융의 모든 것</div>
+          <div class="desc-second">토스에서 쉽고 간편하게</div>
+          <div class="desc-third">
+            <button>App Store</button>
+            <button>Google Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
